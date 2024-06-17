@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import HeroImage from "@/public/images/me.jpg";
+import HeroImage from "@/public/images/profile_square_hi_res.jpg";
 
 export default function SideNavigation() {
   const pathname = usePathname();
