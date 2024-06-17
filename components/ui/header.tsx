@@ -7,21 +7,22 @@ export default function Header() {
       <div className="flex h-16 items-center justify-between before:block">
         <div className="flex grow justify-end space-x-4">
           {/* Search form */}
-          <form className="w-full max-w-[276px]">
+          {/* TODO: Implement search bar */}
+          {/* <form className="w-full max-w-[276px]">
             <div className="flex flex-wrap">
               <div className="w-full">
-                <label className="sr-only block text-sm" htmlFor="search">
+                <label className="block text-sm sr-only" htmlFor="search">
                   Search
                 </label>
                 <div className="relative flex items-center">
                   <input
                     id="search"
                     type="search"
-                    className="form-input w-full py-1 pl-10"
+                    className="form-input py-1 w-full pl-10"
                   />
                   <div className="absolute inset-0 right-auto flex items-center justify-center">
                     <svg
-                      className="mx-3 h-4 w-4 shrink-0"
+                      className="w-4 h-4 shrink-0 mx-3"
                       viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -34,7 +35,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-          </form>
+          </form> */}
 
           {/* Light switch */}
           <ThemeToggle />
@@ -43,9 +44,9 @@ export default function Header() {
           <div>
             <Link
               className="btn-sm bg-sky-500 text-slate-100 hover:bg-sky-600"
-              href="/subscribe"
+              href="/contact"
             >
-              Subscribe
+              Contact
             </Link>
           </div>
         </div>
