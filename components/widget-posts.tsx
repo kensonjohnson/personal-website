@@ -11,7 +11,7 @@ export default async function WidgetPosts() {
             <span className="mr-2 text-sky-500">—</span>{" "}
             <Link
               key={postIndex}
-              className="relative inline-flex font-aspekta text-sm font-[650] duration-150 ease-out before:absolute before:inset-0 before:-z-10 before:origin-center before:scale-x-0 before:bg-sky-200 before:opacity-30 before:duration-150 before:ease-in-out hover:text-green-500 hover:before:scale-100 dark:before:bg-sky-500"
+              className="relative inline-flex font-aspekta text-sm font-[650] duration-150 ease-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-sky-200 before:opacity-30 before:duration-150 before:ease-in-out hover:before:scale-105 dark:before:bg-sky-500"
               href={`/posts/${post.slug}`}
             >
               {post.title}

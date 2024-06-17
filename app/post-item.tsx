@@ -20,7 +20,7 @@ export default function PostItem({ ...props }) {
           </div>
           <h3 className="mb-1 font-aspekta text-lg font-[650]">
             <Link
-              className="relative inline-flex duration-150 ease-out before:absolute before:inset-0 before:-z-10 before:origin-center before:translate-y-1/4 before:-rotate-2 before:scale-x-0 before:bg-sky-200 before:opacity-30 before:duration-150 before:ease-in-out hover:text-sky-500 hover:before:scale-100 dark:before:bg-sky-500"
+              className="relative inline-flex duration-150 ease-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-sky-200 before:opacity-30 before:duration-150 before:ease-in-out hover:before:scale-105 dark:before:bg-sky-500"
               href={`/posts/${props.slug}`}
             >
               {props.title}
