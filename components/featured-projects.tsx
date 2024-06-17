@@ -1,17 +1,19 @@
 export default function FaeturedProjects() {
   return (
     <section>
-      <h2 className="font-aspekta text-xl font-[650] mb-5">Open-Source Projects</h2>
+      <h2 className="mb-5 font-aspekta text-xl font-[650]">
+        Open-Source Projects
+      </h2>
 
       {/* Cards */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
         <a
-          className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:-rotate-1 even:rotate-1 hover:rotate-0 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
+          className="rounded-lg border border-slate-200 p-5 transition-transform duration-700 ease-in-out odd:-rotate-1 even:rotate-1 hover:rotate-0 hover:duration-100 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30"
           href="#0"
         >
-          <div className="flex flex-col h-full">
+          <div className="flex h-full flex-col">
             <div className="grow">
-              <div className="h-10 w-10 flex items-center justify-center border border-slate-200 dark:border-slate-700 rounded-full mb-2">
+              <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 dark:border-slate-700">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
                   <path
                     fill="#34D399"
@@ -20,23 +22,32 @@ export default function FaeturedProjects() {
                   />
                 </svg>
               </div>
-              <div className="text-lg font-aspekta font-[650] mb-1">Awesome Container Tinkering</div>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">Solutions for running containers locally and remotely.</p>
+              <div className="mb-1 font-aspekta text-lg font-[650]">
+                Awesome Container Tinkering
+              </div>
+              <p className="mb-2 text-sm text-slate-500 dark:text-slate-400">
+                Solutions for running containers locally and remotely.
+              </p>
             </div>
-            <div className="text-sky-500 flex justify-end">
-              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="14" height="12">
+            <div className="flex justify-end text-sky-500">
+              <svg
+                className="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="12"
+              >
                 <path d="M9.586 5 6.293 1.707 7.707.293 13.414 6l-5.707 5.707-1.414-1.414L9.586 7H0V5h9.586Z" />
               </svg>
             </div>
           </div>
         </a>
         <a
-          className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:-rotate-1 even:rotate-1 hover:rotate-0 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
+          className="rounded-lg border border-slate-200 p-5 transition-transform duration-700 ease-in-out odd:-rotate-1 even:rotate-1 hover:rotate-0 hover:duration-100 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30"
           href="#0"
         >
-          <div className="flex flex-col h-full">
+          <div className="flex h-full flex-col">
             <div className="grow">
-              <div className="h-10 w-10 flex items-center justify-center border border-slate-200 dark:border-slate-700 rounded-full mb-2">
+              <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 dark:border-slate-700">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
                   <path
                     fill="#8B5CF6"
@@ -45,11 +56,20 @@ export default function FaeturedProjects() {
                   />
                 </svg>
               </div>
-              <div className="text-lg font-aspekta font-[650] mb-1">Engine Prototypes</div>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">Solutions for running containers locally and remotely.</p>
+              <div className="mb-1 font-aspekta text-lg font-[650]">
+                Engine Prototypes
+              </div>
+              <p className="mb-2 text-sm text-slate-500 dark:text-slate-400">
+                Solutions for running containers locally and remotely.
+              </p>
             </div>
-            <div className="text-sky-500 flex justify-end">
-              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="14" height="12">
+            <div className="flex justify-end text-sky-500">
+              <svg
+                className="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="12"
+              >
                 <path d="M9.586 5 6.293 1.707 7.707.293 13.414 6l-5.707 5.707-1.414-1.414L9.586 7H0V5h9.586Z" />
               </svg>
             </div>
@@ -57,5 +77,5 @@ export default function FaeturedProjects() {
         </a>
       </div>
     </section>
-  )
+  );
 }

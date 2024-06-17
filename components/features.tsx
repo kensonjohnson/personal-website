@@ -1,28 +1,40 @@
-'use client'
+"use client";
 
-import { useEffect } from 'react'
-import Image from 'next/image'
-import Illustration from '@/public/images/features-illustration.svg'
-import FeaturesIcon01 from '@/public/images/features-icon-01.svg'
-import FeaturesIcon02 from '@/public/images/features-icon-02.svg'
-import FeaturesIcon03 from '@/public/images/features-icon-03.svg'
-import FeaturesIcon04 from '@/public/images/features-icon-04.svg'
+import { useEffect } from "react";
+import Image from "next/image";
+import Illustration from "@/public/images/features-illustration.svg";
+import FeaturesIcon01 from "@/public/images/features-icon-01.svg";
+import FeaturesIcon02 from "@/public/images/features-icon-02.svg";
+import FeaturesIcon03 from "@/public/images/features-icon-03.svg";
+import FeaturesIcon04 from "@/public/images/features-icon-04.svg";
 
 export default function Features() {
   return (
     <section className="relative">
       {/* Bg illustration */}
-      <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10" aria-hidden="true">
-        <Image src={Illustration} className="max-w-none" width={1440} height={440} alt="Illustration" />
+      <div
+        className="pointer-events-none absolute left-1/2 -z-10 -mt-20 -translate-x-1/2"
+        aria-hidden="true"
+      >
+        <Image
+          src={Illustration}
+          className="max-w-none"
+          width={1440}
+          height={440}
+          alt="Illustration"
+        />
       </div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-hkgrotesk mb-4">Many tools to express your creativity</h2>
-            <div className="max-w-2xl mx-auto">
+          <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
+            <h2 className="h2 font-hkgrotesk mb-4">
+              Many tools to express your creativity
+            </h2>
+            <div className="mx-auto max-w-2xl">
               <p className="text-xl text-slate-500">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est.
               </p>
             </div>
           </div>
@@ -31,79 +43,143 @@ export default function Features() {
           <div className="carousel swiper-container">
             <div className="swiper-wrapper">
               {/* Carousel items */}
-              <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
-                <Image className="mb-3" src={FeaturesIcon01} width={56} height={56} alt="Icon 01" />
+              <div className="swiper-slide flex h-auto flex-col rounded bg-slate-800 p-6">
+                <Image
+                  className="mb-3"
+                  src={FeaturesIcon01}
+                  width={56}
+                  height={56}
+                  alt="Icon 01"
+                />
                 <div className="grow">
-                  <div className="font-hkgrotesk font-bold text-xl">Collaboration</div>
-                  <div className="text-slate-500 mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  <div className="font-hkgrotesk text-xl font-bold">
+                    Collaboration
+                  </div>
+                  <div className="mb-3 text-slate-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore.
                   </div>
                 </div>
                 <div className="text-right">
-                  <a className="font-medium text-indigo-500 inline-flex items-center transition duration-150 ease-in-out group" href="#0">
-                    Learn More{' '}
-                    <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                  <a
+                    className="group inline-flex items-center font-medium text-indigo-500 transition duration-150 ease-in-out"
+                    href="#0"
+                  >
+                    Learn More{" "}
+                    <span className="ml-1 tracking-normal transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
+                      -&gt;
+                    </span>
                   </a>
                 </div>
               </div>
-              <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
-                <Image className="mb-3" src={FeaturesIcon02} width={56} height={56} alt="Icon 02" />
+              <div className="swiper-slide flex h-auto flex-col rounded bg-slate-800 p-6">
+                <Image
+                  className="mb-3"
+                  src={FeaturesIcon02}
+                  width={56}
+                  height={56}
+                  alt="Icon 02"
+                />
                 <div className="grow">
-                  <div className="font-hkgrotesk font-bold text-xl">Experiences</div>
-                  <div className="text-slate-500 mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  <div className="font-hkgrotesk text-xl font-bold">
+                    Experiences
+                  </div>
+                  <div className="mb-3 text-slate-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore.
                   </div>
                 </div>
                 <div className="text-right">
-                  <a className="font-medium text-indigo-500 inline-flex items-center transition duration-150 ease-in-out group" href="#0">
-                    Learn More{' '}
-                    <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                  <a
+                    className="group inline-flex items-center font-medium text-indigo-500 transition duration-150 ease-in-out"
+                    href="#0"
+                  >
+                    Learn More{" "}
+                    <span className="ml-1 tracking-normal transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
+                      -&gt;
+                    </span>
                   </a>
                 </div>
               </div>
-              <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
-                <Image className="mb-3" src={FeaturesIcon03} width={56} height={56} alt="Icon 03" />
+              <div className="swiper-slide flex h-auto flex-col rounded bg-slate-800 p-6">
+                <Image
+                  className="mb-3"
+                  src={FeaturesIcon03}
+                  width={56}
+                  height={56}
+                  alt="Icon 03"
+                />
                 <div className="grow">
-                  <div className="font-hkgrotesk font-bold text-xl">Animation</div>
-                  <div className="text-slate-500 mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  <div className="font-hkgrotesk text-xl font-bold">
+                    Animation
+                  </div>
+                  <div className="mb-3 text-slate-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore.
                   </div>
                 </div>
                 <div className="text-right">
-                  <a className="font-medium text-indigo-500 inline-flex items-center transition duration-150 ease-in-out group" href="#0">
-                    Learn More{' '}
-                    <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                  <a
+                    className="group inline-flex items-center font-medium text-indigo-500 transition duration-150 ease-in-out"
+                    href="#0"
+                  >
+                    Learn More{" "}
+                    <span className="ml-1 tracking-normal transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
+                      -&gt;
+                    </span>
                   </a>
                 </div>
               </div>
-              <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
-                <Image className="mb-3" src={FeaturesIcon04} width={56} height={56} alt="Icon 04" />
+              <div className="swiper-slide flex h-auto flex-col rounded bg-slate-800 p-6">
+                <Image
+                  className="mb-3"
+                  src={FeaturesIcon04}
+                  width={56}
+                  height={56}
+                  alt="Icon 04"
+                />
                 <div className="grow">
-                  <div className="font-hkgrotesk font-bold text-xl">Modeling</div>
-                  <div className="text-slate-500 mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  <div className="font-hkgrotesk text-xl font-bold">
+                    Modeling
+                  </div>
+                  <div className="mb-3 text-slate-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore.
                   </div>
                 </div>
                 <div className="text-right">
-                  <a className="font-medium text-indigo-500 inline-flex items-center transition duration-150 ease-in-out group" href="#0">
-                    Learn More{' '}
-                    <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                  <a
+                    className="group inline-flex items-center font-medium text-indigo-500 transition duration-150 ease-in-out"
+                    href="#0"
+                  >
+                    Learn More{" "}
+                    <span className="ml-1 tracking-normal transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
+                      -&gt;
+                    </span>
                   </a>
                 </div>
               </div>
             </div>
           </div>
           {/* Arrows */}
-          <div className="flex mt-12 space-x-4 justify-end">
-            <button className="carousel-prev relative z-20 w-14 h-14 rounded-full flex items-center justify-center group border border-slate-700 bg-slate-800 hover:bg-slate-700 transition duration-150 ease-in-out">
+          <div className="mt-12 flex justify-end space-x-4">
+            <button className="carousel-prev group relative z-20 flex h-14 w-14 items-center justify-center rounded-full border border-slate-700 bg-slate-800 transition duration-150 ease-in-out hover:bg-slate-700">
               <span className="sr-only">Previous</span>
-              <svg className="w-4 h-4 fill-slate-400 transition duration-150 ease-in-out" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="h-4 w-4 fill-slate-400 transition duration-150 ease-in-out"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M6.7 14.7l1.4-1.4L3.8 9H16V7H3.8l4.3-4.3-1.4-1.4L0 8z" />
               </svg>
             </button>
-            <button className="carousel-next relative z-20 w-14 h-14 rounded-full flex items-center justify-center group border border-slate-700 bg-slate-800 hover:bg-slate-700 transition duration-150 ease-in-out">
+            <button className="carousel-next group relative z-20 flex h-14 w-14 items-center justify-center rounded-full border border-slate-700 bg-slate-800 transition duration-150 ease-in-out hover:bg-slate-700">
               <span className="sr-only">Next</span>
-              <svg className="w-4 h-4 fill-slate-400 transition duration-150 ease-in-out" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="h-4 w-4 fill-slate-400 transition duration-150 ease-in-out"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M9.3 14.7l-1.4-1.4L12.2 9H0V7h12.2L7.9 2.7l1.4-1.4L16 8z" />
               </svg>
             </button>
@@ -111,5 +187,5 @@ export default function Features() {
         </div>
       </div>
     </section>
-  )
+  );
 }

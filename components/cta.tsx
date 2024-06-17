@@ -1,38 +1,56 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import Illustration from '@/public/images/cta-illustration.svg'
+import Image from "next/image";
+import Link from "next/link";
+import Illustration from "@/public/images/cta-illustration.svg";
 
 export default function Cta() {
   return (
     <section className="relative border-t border-slate-800">
       {/* Bg gradient: top */}
       <div
-        className="absolute top-0 left-0 right-0 bg-gradient-to-b from-slate-800 to-transparent opacity-25 h-[25rem] pointer-events-none -z-10"
+        className="pointer-events-none absolute left-0 right-0 top-0 -z-10 h-[25rem] bg-gradient-to-b from-slate-800 to-transparent opacity-25"
         aria-hidden="true"
       />
       {/* Illustration */}
-      <div className="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 -mt-8 pointer-events-none -z-10" aria-hidden="true">
-        <Image src={Illustration} className="max-w-none" alt="Features 01 Illustration" />
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 -z-10 -mt-8 hidden -translate-x-1/2 lg:block"
+        aria-hidden="true"
+      >
+        <Image
+          src={Illustration}
+          className="max-w-none"
+          alt="Features 01 Illustration"
+        />
       </div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
-            <h2 className="h2 font-hkgrotesk">Join the most flexible user-centric platform for teams</h2>
+          <div
+            className="mx-auto max-w-3xl pb-12 text-center md:pb-20"
+            data-aos="fade-up"
+          >
+            <h2 className="h2 font-hkgrotesk">
+              Join the most flexible user-centric platform for teams
+            </h2>
           </div>
           {/* Buttons */}
           <div className="text-center">
-            <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="mx-auto max-w-xs space-y-4 sm:inline-flex sm:max-w-none sm:justify-center sm:space-x-4 sm:space-y-0">
               <div data-aos="fade-up" data-aos-delay="100">
-                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/signup">
-                  Get Started Free{' '}
-                  <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                <Link
+                  className="btn group w-full bg-indigo-500 text-white shadow-sm hover:bg-indigo-600"
+                  href="/signup"
+                >
+                  Get Started Free{" "}
+                  <span className="ml-1 tracking-normal text-sky-300 transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
                     -&gt;
                   </span>
                 </Link>
               </div>
               <div data-aos="fade-up" data-aos-delay="200">
-                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="#0">
+                <a
+                  className="btn w-full border-slate-600 bg-slate-700 text-slate-300 shadow-sm hover:bg-slate-600"
+                  href="#0"
+                >
                   Read Docs
                 </a>
               </div>
@@ -41,5 +59,5 @@ export default function Cta() {
         </div>
       </div>
     </section>
-  )
+  );
 }
