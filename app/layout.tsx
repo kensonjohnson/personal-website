@@ -41,7 +41,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       {/* suppressHydrationWarning: https://github.com/vercel/next.js/issues/44343 */}
       <body
-        className={`${inter.variable} ${aspekta.variable} bg-white font-inter tracking-tight text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-200`}
+        className={`${inter.variable} ${aspekta.variable} bg-white font-inter tracking-tight text-slate-800 antialiased dark:bg-black dark:text-slate-200`}
       >
         <Theme>
           <div className="mx-auto max-w-7xl">
@@ -50,7 +50,7 @@ export default function RootLayout({
 
               {/* Main content */}
               <main className="grow overflow-hidden px-6">
-                <div className="mx-auto flex h-full w-full max-w-[1072px] flex-col">
+                <div className="mx-auto flex h-full w-full max-w-[1280px] flex-col">
                   <Header />
 
                   {children}
