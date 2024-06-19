@@ -64,7 +64,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .form-textarea,
 .form-multiselect,
 .form-select {
-  @apply rounded-full px-3 py-2 text-sm;
+  @apply rounded-md px-3 py-2 text-sm;
 }
 
 .form-input,
